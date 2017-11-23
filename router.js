@@ -12,7 +12,7 @@
 		trigger: function(hash) {
 			var routes = this.routes;
 			var notRoute = false;
-			
+
 			for (let i = 0, len = routes.length; i < len; i++) {
 				var routeReg = this.initRegexps(routes[i].path);
 				if (routeReg.test(hash[0])) {
